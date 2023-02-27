@@ -5,11 +5,11 @@ class CalendarPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      
-      appBar: AppBar(),
-      body: Center(
-      child: const Text("Календарь"),),
+    return CalendarDatePicker(
+      firstDate: DateTime(2023, 2, 1),
+      initialDate: DateTime.now(),
+      lastDate: DateTime(2023, 2, 28),
+      onDateChanged: (DateTime value) {  },
     );
   }
 }
