@@ -8,7 +8,7 @@ class CalendarPage extends StatelessWidget {
     return CalendarDatePicker(
       firstDate: DateTime(2023, 2, 1),
       initialDate: DateTime.now(),
-      lastDate: DateTime(2023, 2, 28),
+      lastDate: DateTime(2025, 2, 28),
       onDateChanged: (DateTime value) {  },
     );
   }

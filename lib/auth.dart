@@ -69,9 +69,10 @@ class AuthPage extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.02,),
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.06,
-                width: MediaQuery.of(context).size.width * 0.7,
+                width: MediaQuery.of(context).size.width * 0.8,
                 child: ElevatedButton(
                   onPressed: (){
                     Navigator.pushNamed(context, '/home');
@@ -94,7 +95,7 @@ class AuthPage extends StatelessWidget {
               InkWell(
                 child: Text(
                   "Sing Up?", 
-                  style: TextStyle(color: Colors.black12),
+                  style: TextStyle(color: Colors.black38),
                 ), 
                 onTap: (){},
               ),
